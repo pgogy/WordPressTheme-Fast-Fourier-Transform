@@ -1,0 +1,334 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+.pagination,
+#search{
+	text-align:center;
+	text-transform:uppercase;
+	font-size: 20px;
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 24px;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+.home article,
+.category article,
+.tag article,
+.search article,
+.author article{
+	text-align:center;
+	margin: 0 auto;
+	position: relative;
+	margin-top:-50px;
+	color:#fff;
+}
+
+#comments{
+	font-size:20px;
+}
+
+.single article,
+#sidebar-bottom,
+#comments{
+	width: 750px;
+	margin: 0 auto;
+	text-align:left;
+}		
+
+.single article svg{
+	margin-top: -30px;
+	clear:both;
+}
+
+.home article svg,
+.category article svg,
+.tag article svg,
+.search article svg,
+.author article svg{
+	position: relative;
+	margin-top:-25px;
+}
+	
+.home article:first-child,
+.category article:first-child,
+.tag article:first-child,
+.search article:first-child,
+.author article:first-child{
+	margin-top: 0px;
+}
+
+#primary-navigation{
+	text-align:center;
+	width: 750px;
+	margin: 0 auto;
+	text-transform:uppercase;
+}
+
+.caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 8px;
+	vertical-align: middle;
+	border-top: 7px solid;
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+}
+
+article svg{
+	display: inline;
+}
+
+article p.title{
+	position: absolute;
+	left:0px;
+	top:10px;
+	width: 100%;
+	text-align:center;
+	text-shadow: 1px 1px 4px #000000;
+	text-transform:uppercase;
+	z-index:100;
+}
+
+.site-title{
+	text-transform:uppercase;
+	text-align: center;
+}
+
+html, body, #page, #primary, #main, #content{
+	background:#000;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-family:"Arimo", sans-serif;
+}
+
+h1{
+	font-size: 50px;
+	padding: 10px 0px;
+ }
+ 
+ h2{
+	font-size: 40px;
+	padding: 10px 0px;
+ }
+ 
+ h3{
+	font-size: 30px;
+	padding: 10px 0px;
+ }
+ 
+ h4{
+	font-size: 25px;
+	padding: 10px 0px;
+ }
+ 
+ h5{
+	font-size: 20px;
+	padding: 10px 0px;
+ }
+ 
+ h6{
+	font-size: 15px;
+	padding: 10px 0px;
+ }
+ 
+ blockquote{
+	font-style: italic;
+	font-size: entry40px;
+	text-align: center;
+	padding: 10px 0px;
+	line-height: 40px;
+ }
+ 
+ dt{
+	font-weight: bold;
+ }
+ 
+ dd{
+	padding-left: 10px;
+ }	
+ 
+ .page-links{
+	padding: 10px 0px;
+ }
+ 
+ .page-links span{
+	padding-right: 10px;
+ }
+ 
+ .comment-list li{
+	padding-left: 30px;
+ }	
+ 
+ .comment-list li.depth-1{
+	padding-left: 0px;
+ }
+ 
+  .entry-content img{
+	max-width:100%;
+	height: auto;
+ }
+
+.archive footer{
+	width: 100%;
+	clear: both;
+	position: relative;
+}
+
+
+ h1{
+	font-size: 50px;
+	padding: 10px 0px;
+ }
+ 
+ h2{
+	font-size: 40px;
+	padding: 10px 0px;
+ }
+ 
+ h3{
+	font-size: 30px;
+	padding: 10px 0px;
+ }
+ 
+ h4{
+	font-size: 25px;
+	padding: 10px 0px;
+ }
+ 
+ h5{
+	font-size: 20px;
+	padding: 10px 0px;
+ }
+ 
+ h6{
+	font-size: 15px;
+	padding: 10px 0px;
+ }
+ 
+ blockquote{
+	font-style: italic;
+	font-size: 40px;
+	text-align: center;
+	padding: 10px 0px;
+	line-height: 40px;
+ }
+ 
+ dt{
+	font-weight: bold;
+ }
+ 
+ dd{
+	padding-left: 10px;
+ }	
+ 
+ .page-links{
+	padding: 10px 0px;
+ }
+ 
+ .page-links span{
+	padding-right: 10px;
+ }
+ 
+ .comment-list li{
+	padding-left: 30px;
+ }	
+ 
+ .comment-list li.depth-1{
+	padding-left: 0px;
+ }
+ 
+  .entry-content img{
+	max-width:100%;
+	height: auto;
+ }
+ 
+ pre{
+	width: 100%;
+	overflow-wrap: break-word;
+ }
+
+.sticky{
+
+}
+
+ul,ol,dl{
+	margin-left: 30px;
+}
+
+.comment-list li{
+	list-style: none;
+}
+
+.single header{
+	text-align: center;
+}
+
+.widget-title{
+	font-size:20px;
+}
+
+.entry-footer h6,
+.entry-footer span{
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+#comments h3,
+#comments p{
+	font-size: 20px;
+}
+
+#comment{
+	display:block;
+	width:100%;
+}
+
+#commentform input[type=text],
+#commentform input[type=url],
+#commentform input[type=email]{
+	width:100%;
+	padding:2% 0%;
+	clear:both;
+	display:block;
+}
+
+.album_div{
+	width:100%; height:100%; float:left; position:relative;
+	background-size: cover; background-position: center center; background-repeat:no-repeat;
+}
+
+button,
+input[type=submit]{
+	padding: 10px;
+	margin-top: 10px;
+}
+
+svg{
+	width:750px;
+	height:100px;
+}
+
+.pad{
+	height:200px;
+}
