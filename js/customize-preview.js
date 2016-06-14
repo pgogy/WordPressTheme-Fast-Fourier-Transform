@@ -1,11 +1,11 @@
 ( function( $ ) {
 
-	var $style = $( '#el_capitan-colour-scheme-css' ),
+	var $style = $( '#fast-fourier-transform-colour-scheme-css' ),
 		api = wp.customize;
 
 	if ( ! $style.length ) {
-	$style = $( 'head' ).append( '<style type="text/css" id="el_capitan-colour-scheme-css" />' )
-		                    .find( '#el_capitan-colour-scheme-css' );
+	$style = $( 'head' ).append( '<style type="text/css" id="fast-fourier-transform-colour-scheme-css" />' )
+		                    .find( '#fast-fourier-transform-colour-scheme-css' );
 	}
 
 	api( 'blogname', function( value ) {

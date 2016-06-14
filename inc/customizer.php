@@ -39,6 +39,89 @@ function fast_fourier_transform_customize_register_home_page_layout( $wp_customi
 			'choices' => array(
 				'left' => 'left',
 				'center' => 'Centre',	
+				'compact' => 'Compact',	
+			),
+		)
+	);
+
+}
+
+function fast_fourier_transform_customize_register_menu_layout( $wp_customize ){
+
+	$wp_customize->add_section( 'menu_layout' , array(
+		'title'      => __( 'Menu Layout', 'fast-fourier-transform' ),
+		'priority'   => 2,
+	) );
+
+	$wp_customize->add_setting(
+		'menu',
+		array(
+			'default' => 'center',
+			'sanitize_callback' => 'fast_fourier_transform_sanitize_text'
+		)
+	);
+	 
+	$wp_customize->add_control(
+		'menu',
+		array(
+			'type' => 'radio',
+			'label' => 'Menu layout',
+			'section' => 'menu_layout',
+			'choices' => array(
+				'top' => 'Top',
+				'middle' => 'Middle',
+				'bottom' => 'Bottom',		
+			),
+		)
+	);
+	
+	$wp_customize->add_setting(
+		'fixednavigation',
+		array(
+			'default' => 'off',
+			'sanitize_callback' => 'fast_fourier_transform_sanitize_text'
+		)
+	);
+	 
+	$wp_customize->add_control(
+		'fixednavigation',
+		array(
+			'type' => 'radio',
+			'label' => 'Fix Navigation to the bottom',
+			'section' => 'menu_layout',
+			'choices' => array(
+				'off' => 'Off',
+				'on' => 'On',		
+			),
+		)
+	);
+
+}
+
+function fast_fourier_transform_customize_register_sitename_layout( $wp_customize ){
+
+	$wp_customize->add_section( 'sitename_layout' , array(
+		'title'      => __( 'Site name Layout', 'fast-fourier-transform' ),
+		'priority'   => 2,
+	) );
+
+	$wp_customize->add_setting(
+		'sitename',
+		array(
+			'default' => 'top',
+			'sanitize_callback' => 'fast_fourier_transform_sanitize_text'
+		)
+	);
+	 
+	$wp_customize->add_control(
+		'sitename',
+		array(
+			'type' => 'radio',
+			'label' => 'Site name layout',
+			'section' => 'sitename_layout',
+			'choices' => array(
+				'top' => 'Top',
+				'bottom' => 'Bottom',		
 			),
 		)
 	);
@@ -329,6 +412,8 @@ function fast_fourier_transform_customize_register( $wp_customize ) {
 	fast_fourier_transform_customize_register_page_layout( $wp_customize );
 	fast_fourier_transform_customize_register_home_page_layout( $wp_customize );
 	fast_fourier_transform_customize_register_fav_icon( $wp_customize );
+	fast_fourier_transform_customize_register_menu_layout( $wp_customize );
+	fast_fourier_transform_customize_register_sitename_layout( $wp_customize );
 	
 }
 add_action( 'customize_register', 'fast_fourier_transform_customize_register' );

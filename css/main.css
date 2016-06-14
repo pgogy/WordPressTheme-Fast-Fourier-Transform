@@ -38,7 +38,6 @@ a{
 	margin: 0 auto;
 	position: relative;
 	margin-top:-50px;
-	color:#fff;
 }
 
 #comments{
@@ -73,6 +72,23 @@ a{
 .search article:first-child,
 .author article:first-child{
 	margin-top: 0px;
+}
+
+#main article.home-compact{
+	text-align:left;
+	margin: 0 0 0 1px;
+	float:left;
+	position:relative;
+}
+
+.home #main article.home-masonry{
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+.page-footer{
+	clear: both;
 }
 
 #primary-navigation{
@@ -114,7 +130,6 @@ article p.title{
 }
 
 html, body, #page, #primary, #main, #content{
-	background:#000;
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
